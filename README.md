@@ -46,10 +46,20 @@ The system follows a **layered architecture**:
 ## **🔧 Technologies Used**
 - **Programming Language:** Java ☕  
 - **Data Storage:** CSV Files 📄  
-- **Design Principles:** Object-Oriented Programming (OOP)  
+- **Design Principles:** Object-Oriented Programming (OOP) and Object Oriented Design and SOLID Principles
 
 ## **⚡ Installation & Usage**
 1. Clone the repository:  
    ```sh
    git clone https://github.com/YOUR-USERNAME/TaskAdemic.git
    cd TaskAdemic
+   javac -d bin src/*.java
+   java -cp bin App
+## **🛠️ Future Enhancements**
+- 📌 **Database Integration** – Replace CSV files with a database for better data management.  
+- 📌 **Graphical User Interface (GUI)** – Develop a user-friendly interface for better interaction.  
+- 📌 **Advanced Task Prioritization** – Implement intelligent algorithms to prioritize students based on performance.  
+
+## **📄 License**
+This project is open-source under the **MIT License**.  
+
