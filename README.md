@@ -1,22 +1,55 @@
-<<<<<<< HEAD
-## Getting Started
+# **TaskAdemic System**
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## **📌 Project Overview**
+TaskAdemic is a **Task Matching and Management System** designed to streamline the process of **assigning and tracking tasks for students**. The system ensures **efficient task distribution** based on student skills and availability, following **object-oriented design principles** for maintainability and scalability.
 
-## Folder Structure
+## **🚀 Features**
+- 📌 **Automated Task Assignment** – Matches students with tasks based on their skills and availability.  
+- 📁 **CSV Data Handling** – Reads and writes student, task, and assignment data.  
+- ✅ **Task Completion Tracking** – Allows users to mark tasks as done.  
+- 📊 **Report Generation** – Produces reports on assigned and completed tasks.  
+- 🔒 **User Authentication** – Ensures secure system access.  
 
-The workspace contains two folders by default, where:
+## **🛠️ System Architecture**
+The system follows a **layered architecture**:  
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1. **Application Layer (User Interface)**
+   - Provides interaction with users (e.g., assigning tasks, marking tasks complete).  
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+2. **Business Logic Layer**
+   - Implements **task assignment logic**, **grading operations**, and **student task management**.  
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+3. **Data Layer**
+   - Manages **CSV file operations** and **data storage for students and tasks**.  
 
-## Dependency Management
+## **📌 Key Components**
+### **Classes and Responsibilities**
+| Class | Responsibility |
+|-------|--------------|
+| `Task` | Abstract class representing tasks |
+| `Student` | Stores student details and assigned tasks |
+| `CSVHandler` | Reads and writes CSV data |
+| `TaskOperations` | Handles task assignments |
+| `StudentOperations` | Manages student-related operations |
+| `MarkDone` | Interface for marking tasks as completed |
+| `App` | Main application logic |
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-=======
-# Job_Matching_System
->>>>>>> ca72bc1979bcdd11cf0a5cb2d277517bc90e3c2f
+## **📊 Requirements Matrix**
+| Feature | Implemented In |
+|---------|--------------|
+| Marking Task Done | `MarkDone`, `TaskOperations` |
+| Reading Data | `CSVHandler` |
+| Writing Reports | `CSVHandler` |
+| Assigning Tasks | `TaskOperations`, `StudentOperations` |
+| User Authentication | `App` |
+
+## **🔧 Technologies Used**
+- **Programming Language:** Java ☕  
+- **Data Storage:** CSV Files 📄  
+- **Design Principles:** Object-Oriented Programming (OOP)  
+
+## **⚡ Installation & Usage**
+1. Clone the repository:  
+   ```sh
+   git clone https://github.com/YOUR-USERNAME/TaskAdemic.git
+   cd TaskAdemic
